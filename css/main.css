@@ -1,0 +1,678 @@
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{font-size: 62.5%;
+    font-family: var(--contain-font);
+    scroll-behavior: smooth;
+}
+:root{--primary-color-blue: rgb(28,35,77);
+    --primary-color-golden: rgb(255,183,0);
+    --secondary-color-purple: rgb(100,45,155);
+    --secondary-color-gray: rgb(240, 240, 240);
+    --secondary-color-white: rgb(255,255,255);
+    --title-font: "Lato", sans-serif;
+    --contain-font: "Urbanist", sans-serif;
+    --title-font-size: 2.5rem;
+    --subtitle-font-size: 1.9rem;
+    --contain-font-size: 1.4rem
+}
+body{font-size: var(--contain-font-size);
+    font-family: var(--contain-font);
+    position: relative;
+}
+header{position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 32rem;
+    height: 45rem;
+    text-align: center;
+    background: linear-gradient(160deg, var(--secondary-color-purple)61%,var(--primary-color-golden) 100%);
+}
+header img{width: 15rem;
+    height: 10rem;
+    margin-top: 3rem;
+    align-self: center;
+}
+.header--title-container{width: 90%;
+    min-width: 28.8rem;
+    max-width: 90rem;
+    height: 21.8rem;
+    margin-top: 4rem;
+}
+.header--title-container h1{font-size: var(--title-font-size);
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--secondary-color-white);
+}
+.header--title-container p{margin-top: 2.5rem;
+    line-height: 1.8rem;
+    color: var(--secondary-color-white);
+}
+.header--title-container .header--button{position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%,-6rem);
+    display: block;
+    margin-top: 3.5rem;
+    padding: 1.5rem;
+    width: 20rem;
+    height: 4.8rem;
+    background-color: var(--secondary-color-white);
+    box-shadow: 0 0.2rem 0.4rem var(--secondary-color-purple);
+    border: none;
+    border-radius: 0.5rem;
+    font-size: var(--contain-font-size);
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--secondary-color-purple);
+}
+.header--button span{display: inline-block;
+    width: 1.3rem;
+    height: 1.5rem;
+    background-image: url('/assets/icons/arrow-down.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 1rem;
+    vertical-align: text-bottom;
+}
+main{width: 100%;
+    height: auto;
+    background-color: var(--secondary-color-gray);
+}
+.main--exchange-section{margin-bottom: 5.7rem;}
+.main--exchange-section .exchange-section--image-div{width: 15rem;
+    height: 15rem;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    background-image: url('/assets/icons/bitcoin-i.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.exchange-section--title, .plans-section--title{width: 90%;
+    min-width: 29rem;
+    max-width: 90rem;
+    margin: 0 auto;
+}
+.exchange-section--title h2, .main--plans-section h2{margin-bottom: 3rem;
+    font-size: var(--title-font-size);
+    font-family: var(--title-font);
+    font-weight: 700;
+    line-height: 2.6rem;
+    color: var(--secondary-color-purple);
+}
+.exchange-section--title p{margin-bottom: 3rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: var(--primary-color-blue);
+}
+.exchange-section--slider-div{display: flex;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    align-items: center;
+    margin: 0 auto;
+    min-width: 100%;
+    max-width: 70rem;
+}
+.exchange-section--currencies-div, .exchange-section--prices-div{min-width: 100%;}
+.exchange-section--slider-div::-webkit-scrollbar {
+    background-color: var(--secondary-color-gray);
+    height: 0.3rem;
+}
+.exchange-section--slider-div::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color-blue);
+}
+.currencies-div--currencies-table-div, .prices-div--prices-table-div{width: 80%;
+    min-width: 25rem;
+    height: 35rem;
+    margin: 2rem auto;
+    font-family: "Inter", sans-serif;
+    scroll-snap-align: center;
+    align-content: center;
+    justify-items: center;
+}
+.currencies-div--currencies-table-div .currencies-table-div--title, .prices-div--prices-table-div .prices-table-div--title{
+    font-size: var(--subtitle-font-size);
+    font-weight: bold;
+    line-height: 2.3rem;
+    color: var(--primary-color-golden);
+    margin-bottom: 2rem;
+}
+.prices-div--prices-table-div .prices-table-div--title{color: var(--secondary-color-purple);}
+.currencies-table-div--currencies-table, .prices-table-div--prices-table{width: 100%;
+    min-width: 23rem;
+    max-width: 30rem;
+    height: 25rem;
+    margin: 0 auto;
+}
+.currencies-table-div--currencies-table table, .prices-table-div--prices-table table{width: 100%;
+    height: 100%;
+}
+.currencies-table-div--currencies-table td, .prices-table-div--prices-table td{width: 50%;
+    line-height: 1.9rem;
+    color: var(--primary-color-blue);
+    background-color: var(--secondary-color-white);
+    font-weight: 600;
+}
+.table__top-right{border-top-right-radius: 1rem;}
+.table__bottom-right{border-bottom-right-radius: 1rem;}
+.table__top-left{border-top-left-radius: 1rem;}
+.table__bottom-left{border-bottom-left-radius: 1rem;}
+.currencies-div--currencies-table-div .table__right, .prices-div--prices-table-div .table__right{font-family: var(--title-font);
+    font-size: var(--content-font-size);
+    font-weight: normal;
+    color: gray;
+    line-height: 1.7rem;
+}
+.currencies-div--currencies-table-div .down{display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: .5rem;
+    background-image: url('/assets/icons/arrow-decrease.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    vertical-align: text-bottom;
+}
+.currencies-div--currencies-table-div .up{display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: .5rem;
+    background-image: url('/assets/icons/arrow-increase.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    vertical-align: text-bottom;
+}
+.currencies-div--dates{width: fit-content;
+    height: 3rem;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    padding: .8rem;
+    background-color: rgba(28,35,77,1);
+    border-radius: 1rem;
+}
+.currencies-div--dates p{font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--secondary-color-white);
+}
+.main--product-detail-section{width: 100%;
+    min-width: 32rem;
+    height: auto;
+    position: relative;
+    padding: 2rem 1rem;
+    background-color: var(--primary-color-blue);
+}
+.main--product-detail-section>span{position: absolute;
+    left: 50%;
+    top: -3.5rem;
+    transform: translate(-3.7rem);
+    width: 6rem;
+    height: 7rem;
+    background-image: url('/assets/icons/crypto-nest-icon.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.product-detail-section--title{width: 90%;
+    min-width: 29rem;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 5rem;
+    text-align: center;
+}
+.product-detail-section--title h2{font-size: var(--title-font-size);
+    font-family: var(--title-font);
+    font-weight: 700;
+    line-height: 2.6rem;
+    color: var(--primary-color-golden);
+}
+.product-detail-section--title p{margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: var(--secondary-color-gray);
+}
+.product-detail-section--cards-div{display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
+    gap: 3rem 1rem;
+    margin: 2rem 0;
+}
+.product-detail-section--cards-div .cards-div--card{display: flex;  
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 80%;
+    min-width: 29rem;
+    max-width: 40rem;
+    height: 17rem;
+    margin: auto;
+    padding: 1.5rem;
+    background-color:rgba(255,183,0,0.67);
+    border-radius: 1rem;
+    box-shadow: 0 0.2rem 0.4rem var(--primary-color-golden);
+    color: var(--secondary-color-gray);
+}
+.product-detail-section--cards-div
+.cards-div--card .card--info{display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+.cards-div--card .clock{display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    background-image: url('/assets/icons/clock.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 1rem;
+}
+.cards-div--card .eye{display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    background-image: url('/assets/icons/eye.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 1rem;
+}
+.cards-div--card .dollar{display: inline-block;
+    width: 4rem;
+    height: 4rem;    
+    background-image: url('/assets/icons/dollar.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 1rem;
+}
+.cards-div--card .check{display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    background-image: url('/assets/icons/check.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 1rem;
+}
+.cards-div--card .card--card-title{font-size: var(--subtitle-font-size);
+    font-weight: bold;
+    line-height: 2.3rem;
+    color: var(--secondary-color-gray);
+}
+.cards-div--card .card--card-contain{font-size: var(--contain-font-size);
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--primary-color-blue);
+}
+.main--img-section{width: 100%;
+    min-width: 32rem;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+}
+.main--img-section picture{width: 100%;
+    height: 100%;
+}
+.main--img-section picture img{width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.main--img-section .img-section--title{font-size: var(--title-font-size);
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--secondary-color-white);
+    position: absolute;
+    left: 50%;
+    bottom: 2rem;
+    transform: translate(-50%);
+    width: 100%;
+}
+.main--plans-section{width: 100%;
+    min-width: 32rem;
+    padding-bottom: 7rem;
+    text-align: center;
+}
+.main--exchange-section, .plans-section--title{width: 100%;
+    height: auto;
+    padding-top: 7em;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+.plans-section--cards-div{display: flex;
+    align-items: center;
+    min-height: auto;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    margin: 0 auto;
+    width: 100%;
+    min-width: 100%;
+    max-width: 20rem;
+}
+.plans-section--cards-div::-webkit-scrollbar {
+    background-color: var(--secondary-color-gray);
+    height: 0.3rem;
+}
+.plans-section--cards-div::-webkit-scrollbar-thumb {
+    background-color: var(--secondary-color-purple);
+}
+.plans-section--cards-div .cards-div--card{width: 100%;
+    min-width: 100%;
+    max-width: 20rem;
+    height: 34rem;
+    margin: 2rem auto;
+    align-content: center;
+    justify-items: center;
+}
+.plans-section--cards-div .cards-div--card .card--info{min-width: 50%;
+    max-width: 20rem;
+    min-height: 25rem;
+    margin: 0 3rem;
+    padding: 2.5rem 1.5rem;
+    background-color: var(--secondary-color-white);
+    border-radius: 1rem;
+    box-shadow: 0 0.2rem 0.4rem var(--secondary-color-purple);
+    color: var(--primary-color-blue);
+    font-weight: bold;
+    line-height: 2.3rem;
+    align-items: center;
+    scroll-snap-align: center;
+}
+.plans-section--cards-div .cards-div--card .recommended p:nth-child(1){position: absolute;
+    top: -2rem;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: var(--subtitle-font-size);
+    font-weight: bold;
+    line-height: 2.3rem;
+    color: var(--secondary-color-purple);
+    background-color: var(--secondary-color-gray);
+    border-radius: 1rem;
+    border: 0.1rem solid var(--secondary-color-purple);
+    padding: .5rem;
+    box-shadow: 0 0.2rem 0.2rem var(--secondary-color-purple);
+    z-index: 1;
+}
+.plans-section--cards-div .cards-div--card .recommended{position: relative; 
+    background: linear-gradient(-25deg, var(--secondary-color-purple)11%,var(--primary-color-golden) 70%);
+    color: var(--secondary-color-white);box-shadow: 0 0.4rem 0.8rem var(--secondary-color-purple);
+}
+.plans-section--cards-div .cards-div--card .recommended .info--price{color: var(--secondary-color-white);
+    text-shadow: 0.2rem 0.2rem 0.4rem var(--primary-color-blue);
+}
+.plans-section--cards-div .cards-div--card .recommended .info--price span{color: var(--secondary-color-white);
+    text-shadow: 0.2rem 0.2rem 0.4rem var(--primary-color-blue);
+}
+.plans-section--cards-div .cards-div--card .recommended .info--saving{color: var(--secondary-color-white);
+}
+.plans-section--cards-div .cards-div--card .recommended button{background-color: var(--secondary-color-white);
+    box-shadow: 0 0.2rem 0.4rem var(--secondary-color-gray);
+    color: var(--secondary-color-purple);
+}
+.cards-div--card .card--info{display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}
+.cards-div--card .card--info .info--title{font-size: var(--subtitle-font-size);
+    font-weight: bold;
+    line-height: 2.3rem;
+    color: var(--secondary-color-purple);
+}
+.cards-div--card .card--info .info--price{font-size: 4.2rem;
+    font-weight: bolder;
+    line-height: 1.4rem;
+    color: var(--primary-color-blue);
+    padding: 1rem 0;
+    margin: 3rem auto;
+    text-shadow: 0.1rem 0.1rem 0.2rem var(--secondary-color-purple);
+}
+.cards-div--card .info--price span{font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.4rem;
+    color: var(--primary-color-blue);
+}
+.cards-div--card .info--saving{font-size: var(--contain-font-size);
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--primary-color-blue);
+}
+.cards-div--card button{display: block;
+    margin: 0 auto;
+    padding: .5rem;
+    width: 16rem;
+    height: 5rem;
+    background-color: var(--secondary-color-purple);
+    box-shadow: 0 0.2rem 0.4rem var(--secondary-color-purple);
+    border: none;
+    border-radius: 2rem;
+    font-size: var(--contain-font);
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--secondary-color-white);
+    margin: 2.5rem 0 0 0;
+    align-self: center;
+}
+.cards-div--card button span{display: inline-block;
+    width: 1.3rem;
+    height: 1.5rem;
+    background-image: url('/assets/icons/arrow-right.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 1rem;
+    vertical-align: text-bottom;
+}
+.cards-div--card .recommended button span{display: inline-block;
+    width: 1.3rem;
+    height: 1.5rem;
+    background-image: url('/assets/icons/arrow-right_purple.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 1rem;
+    vertical-align: text-bottom;
+}
+footer{width: 100%;
+    height: 15rem;
+    background: linear-gradient(90deg, var(--secondary-color-purple)61%,var(--primary-color-blue) 100%, var(--primary-color-golden) 40%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 1rem;
+}
+.footer--logo{width: 7rem;
+    height: auto;
+    display: block
+}
+.footer--logo img{width: 100%;
+    height: 100%;
+}
+.footer--info{width: 70%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    line-height: 2rem;
+}
+.footer--info p{color: var(--primary-color-golden);
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-style: italic;
+}
+@media(min-width: 425px){
+    .main--img-section{
+        background-position: center;
+    }
+}
+@media(min-width: 600px){
+    .exchange-section--slider-div{
+        overflow-x: visible;
+        overscroll-behavior: none;
+        scroll-snap-type: none;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .currencies-div--currencies-table-div, .prices-div--prices-table-div{
+        min-width: 24rem;
+    }
+    .exchange-section--currencies-div, .exchange-section--prices-div{
+        max-width: 24rem;
+        min-width: initial;
+        margin: 0;
+    }
+    .plans-section--cards-div .cards-div--card{
+        min-width: 50%;
+    }
+    .plans-section--cards-div .cards-div--card .card--info{
+        margin: 0;
+        min-width: initial;
+    }
+    .main--img-section{
+        background-position: top;
+    }
+}
+@media(min-width:768px){
+    header{height: 90vh;}
+    header img{width: 30%;}
+    .main--product-detail-section{min-height: 70vh;
+        align-content: center;
+    }
+    body, .cards-div--card .card--card-contain, .footer--info p{font-size: 1.7rem;}
+    .header--title-container h1,.main--img-section .img-section--title{font-size: 2.8rem;}
+    .header--title-container .header--button{font-size: 2rem;
+        width: 24rem;
+    }
+    .header--button span {vertical-align: middle;}
+    .exchange-section--title h2, .main--plans-section h2{font-size: 2.9rem;}
+    .currencies-div--currencies-table-div .currencies-table-div--title, .prices-div--prices-table-div .prices-table-div--title{font-size: 2.2rem;}
+    .main--product-detail-section{height: 100vh;}
+    .product-detail-section--cards-div{padding: 0 3rem;
+        grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+    }
+    .main--img-section{
+        height: 100vh;
+        background-position: top;
+    }
+    .main--plans-section{height: 100vh;
+        align-content: center;
+    }
+    .plans-section--cards-div{
+        overflow-x: visible;
+        overscroll-behavior: none;
+        scroll-snap-type: none;
+    }
+    .plans-section--cards-div .cards-div--card{
+        max-width: none;
+        min-width: initial;
+        margin: 0;
+    }
+    .plans-section--cards-div .cards-div--card .card--info {
+        margin: 0;
+        width: initial;
+        max-width: 20rem;
+    }
+    .cards-div--card button{font-size: initial;}
+    footer{justify-content: space-evenly;}
+}
+@media(min-width: 1024px){
+    header{
+        height: 90vh;
+        justify-content: space-evenly;
+    }
+    header img{width: 100%;}
+    .exchange-section--currencies-div, .exchange-section--prices-div {max-width: initial;
+        min-width: initial;
+    }
+    .currencies-div--currencies-table-div, .prices-div--prices-table-div{width: 100%;
+        min-width: 32rem;
+    }
+    .currencies-table-div--currencies-table, .prices-table-div--prices-table{width: 90%;
+        max-width: 35rem;
+        height: 30rem;
+    }
+    .main--product-detail-section{height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .cards-div--card .clock, .cards-div--card .eye, .cards-div--card .dollar, .cards-div--card .check{width: 7rem;
+        height: 7rem;
+    }
+    .product-detail-section--cards-div{
+        grid-template-columns: repeat(auto-fit, minmax(46rem, 1fr));}
+    .product-detail-section--cards-div .cards-div--card{height: 20rem;
+        width: 90%;
+    }
+}
+@media(min-width: 1232px){
+    .exchange-section--slider-div{justify-content: space-evenly;}
+    .main--product-detail-section {
+        height: auto;
+    }
+    .product-detail-section--cards-div .cards-div--card {
+        height: 30rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+@media(min-width: 1440px){
+    .exchange-section--slider-div{justify-content: space-evenly;}
+    .product-detail-section--cards-div{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, auto);
+        gap: 10px;
+    }
+    .product-detail-section--cards-div .cards-div--card:nth-child(1){
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .product-detail-section--cards-div .cards-div--card:nth-child(2){
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .product-detail-section--cards-div .cards-div--card:nth-child(3){
+        grid-column: 3;
+        grid-row: 1;;
+    }
+    .product-detail-section--cards-div .cards-div--card:nth-child(4){
+        grid-column: 4;
+        grid-row: 2;
+    }
+    .main--plans-section{height: 100vh;
+        display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+    }
+    .plans-section--cards-div .cards-div--card .card--info{
+        width: 100%;
+        max-width: 30rem;
+        height: 37rem;
+        justify-content: space-evenly;
+    }
+    .plans-section--cards-div .cards-div--card .recommended p:nth-child(1){
+        font-size: 2.5rem;
+    }
+    .cards-div--card .card--info .info--title{
+        font-size: var(--title-font-size);
+    }
+    .cards-div--card .card--info .info--price{
+        font-size: 5.5rem;
+    }
+    .cards-div--card .info--price span{
+        font-size: 2.5rem;
+    }
+    .cards-div--card .info--saving{
+        font-size: var(--contain-font);
+    }
+    .cards-div--card button{
+        width: 80%;
+        margin-top: 2rem;
+    }
+}
