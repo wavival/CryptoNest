@@ -51,6 +51,7 @@ header img{width: 15rem;
 .header--title-container p{margin-top: 2.5rem;
     line-height: 1.8rem;
     color: var(--secondary-color-white);
+    font-size: var(--subtitle-font-size);
 }
 .header--title-container .header--button{position: absolute;
     left: 50%;
@@ -105,9 +106,10 @@ main{width: 100%;
     line-height: 2.6rem;
     color: var(--secondary-color-purple);
 }
-.exchange-section--title p{margin-bottom: 3rem;
+.exchange-section--title p, .main--plans-section p{margin-bottom: 3rem;
     font-weight: 500;
-    line-height: 1.6rem;
+    font-size: var(--subtitle-font-size);
+    line-height: 2.4rem;
     color: var(--primary-color-blue);
 }
 .exchange-section--slider-div{display: flex;
@@ -235,6 +237,7 @@ main{width: 100%;
 .product-detail-section--title p{margin-top: 2rem;
     margin-bottom: 2rem;
     font-weight: 500;
+    font-size: var(--subtitle-font-size);
     line-height: 1.6rem;
     color: var(--secondary-color-gray);
 }
@@ -501,10 +504,11 @@ footer{width: 100%;
     align-items: flex-start;
     line-height: 2rem;
 }
-.footer--info p{color: var(--primary-color-golden);
+.footer--info a, p{color: var(--primary-color-golden);
     font-size: 1.2rem;
     font-weight: 500;
     font-style: italic;
+    text-decoration: none;
 }
 @media(min-width: 425px){
     .main--img-section{
@@ -545,7 +549,9 @@ footer{width: 100%;
         align-content: center;
     }
     body, .cards-div--card .card--card-contain, .footer--info p{font-size: 1.7rem;}
-    .header--title-container h1,.main--img-section .img-section--title{font-size: 2.8rem;}
+    .header--title-container h1,.main--img-section .img-section--title{font-size: 2.8rem;
+        line-height: 3.2rem;
+    }
     .header--title-container .header--button{font-size: 2rem;
         width: 24rem;
     }
