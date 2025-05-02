@@ -21,34 +21,31 @@ Bienvenido a **CryptoNest**, una landing page creada para demostrar mis habilida
 - **Optimización de Imágenes**: Carga eficiente de imágenes adaptables al tamaño de la pantalla.
   
 
-## 📂 **Estructura del Proyecto**
+## 📁 Estructura del Proyecto
 
-├── index.html
-
-├── css/
-│   └── main.css
-
-├── assets/
-│   ├── icons/
-│   │   ├── arrow-decrease.svg
-│   │   ├── arrow-down.svg
-│   │   ├── arrow-increase.svg
-│   │   ├── arrow-right.svg
-│   │   ├── arrow-right_purple.svg
-│   │   ├── bitcoin-i.svg
-│   │   ├── bitcoin.svg
-│   │   ├── check.svg
-│   │   ├── clock.svg
-│   │   ├── crypto-nest-icon.ico
-│   │   ├── crypto-nest-icon.svg
-│   │   ├── crypto-nest-logo.svg
-│   │   ├── crypto-nest.svg
-│   │   ├── dollar.svg
-│   │   └── eye.svg
-│
-│   └── images/
-│       ├── image_0.jpg
-│       └── image_1.jpg
+- index.html
+- css/
+  - main.css
+- assets/
+  - icons/
+    - arrow-decrease.svg
+    - arrow-down.svg
+    - arrow-increase.svg
+    - arrow-right.svg
+    - arrow-right_purple.svg
+    - bitcoin-i.svg
+    - bitcoin.svg
+    - check.svg
+    - clock.svg
+    - crypto-nest-icon.ico
+    - crypto-nest-icon.svg
+    - crypto-nest-logo.svg
+    - crypto-nest.svg
+    - dollar.svg
+    - eye.svg
+  - images/
+    - image_0.jpg
+    - image_1.jpg
 
 
 ## ☁️ **Despliegue**
