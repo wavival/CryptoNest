@@ -89,7 +89,7 @@ header img {
   display: inline-block;
   width: 1.3rem;
   height: 1.5rem;
-  background-image: url("/assets/icons/arrow-down.svg");
+  background-image: url("../assets/icons/arrow-down.svg");
   background-position: center;
   background-repeat: no-repeat;
   margin-left: 1rem;
@@ -108,7 +108,7 @@ main {
   height: 15rem;
   margin: 0 auto;
   margin-bottom: 5rem;
-  background-image: url("/assets/icons/bitcoin-i.svg");
+  background-image: url("../assets/icons/bitcoin-i.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -226,7 +226,7 @@ main {
   width: 1.5rem;
   height: 1.5rem;
   margin-left: 0.5rem;
-  background-image: url("/assets/icons/arrow-decrease.svg");
+  background-image: url("../assets/icons/arrow-decrease.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -237,7 +237,7 @@ main {
   width: 1.5rem;
   height: 1.5rem;
   margin-left: 0.5rem;
-  background-image: url("/assets/icons/arrow-increase.svg");
+  background-image: url("../assets/icons/arrow-increase.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -272,7 +272,7 @@ main {
   transform: translate(-3.7rem);
   width: 6rem;
   height: 7rem;
-  background-image: url("/assets/icons/crypto-nest-icon.svg");
+  background-image: url("../assets/icons/crypto-nest-icon.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -333,7 +333,7 @@ main {
   display: inline-block;
   width: 4rem;
   height: 4rem;
-  background-image: url("/assets/icons/clock.svg");
+  background-image: url("../assets/icons/clock.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -343,7 +343,7 @@ main {
   display: inline-block;
   width: 4rem;
   height: 4rem;
-  background-image: url("/assets/icons/eye.svg");
+  background-image: url("../assets/icons/eye.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -353,7 +353,7 @@ main {
   display: inline-block;
   width: 4rem;
   height: 4rem;
-  background-image: url("/assets/icons/dollar.svg");
+  background-image: url("../assets/icons/dollar.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -363,7 +363,7 @@ main {
   display: inline-block;
   width: 4rem;
   height: 4rem;
-  background-image: url("/assets/icons/check.svg");
+  background-image: url("../assets/icons/check.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -561,7 +561,7 @@ main {
   display: inline-block;
   width: 1.3rem;
   height: 1.5rem;
-  background-image: url("/assets/icons/arrow-right.svg");
+  background-image: url("../assets/icons/arrow-right.svg");
   background-position: center;
   background-repeat: no-repeat;
   margin-left: 1rem;
@@ -571,7 +571,7 @@ main {
   display: inline-block;
   width: 1.3rem;
   height: 1.5rem;
-  background-image: url("/assets/icons/arrow-right_purple.svg");
+  background-image: url("../assets/icons/arrow-right_purple.svg");
   background-position: center;
   background-repeat: no-repeat;
   margin-left: 1rem;
@@ -787,7 +787,7 @@ p {
   .exchange-section--slider-div {
     justify-content: space-evenly;
   }
-  .product-detail-section--cards-div {
+  .product-detail_section--cards-div {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, auto);
     gap: 10px;
